@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .presentation {
+            width: 80%;
+            padding: 2em;
+            background-color: #ccc;
+            background-image: url(img/b-l.gif), url(img/b-r.gif), url(img/t-l.gif), url(img/t-r.gif), url(img/b.gif), url(img/l.gif), url(img/r.gif), url(img/t.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-y, repeat-y, repeat-x;
+            background-position: bottom left, bottom right, top left, top right, bottom, left, right, top;
+        }
+
+        .one {
+            width: 80%;
+            padding: 2em;
+            background:
+                url(img/b-l.gif) no-repeat bottom left,
+                url(img/b-r.gif) no-repeat bottom right,
+                url(img/t-l.gif) no-repeat top left,
+                url(img/t-r.gif) no-repeat top right,
+                url(img/b.gif) repeat-x bottom,
+                url(img/l.gif) repeat-y left,
+                url(img/r.gif) repeat-y right,
+                url(img/t.gif) repeat-x top;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="presentation">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit aliquam molestias corporis libero ad
+            quae atque, earum ipsum beatae nulla accusantium quia a dicta eos nihil quos delectus consequuntur.</p>
+    </div>
+    <br>
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit aliquam molestias corporis libero ad
+            quae atque, earum ipsum beatae nulla accusantium quia a dicta eos nihil quos delectus consequuntur.</p>
+    </div>
+    <br>
+    <div style="width: 80%; background: url(img/l.gif) repeat-y left; background-color: blueviolet">
+        <div style="background: url(img/b.gif) repeat-x bottom">
+            <div style="background: url(img/r.gif) repeat-y right">
+                <div style="background: url(img/t.gif) repeat-x top">
+                    <div style="background: url(img/b-l.gif) no-repeat bottom left">
+                        <div style="background: url(img/b-r.gif) no-repeat bottom right">
+                            <div style="background: url(img/t-l.gif) no-repeat top left">
+                                <div style="background: url(img/t-r.gif) no-repeat top right">
+                                    <div style="padding: 2em">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit
+                                            aliquam molestias corporis libero ad
+                                            quae atque, earum ipsum beatae nulla accusantium quia a dicta eos nihil quos
+                                            delectus consequuntur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
